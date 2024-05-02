@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(218, 218, 220);
+    margin: 0%;
+}
+.toplink{
+    background-color: rgb(231, 206, 226);
+    overflow: hidden;
+}
+.toplink a{
+    color: rgb(60, 130, 215);
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    float: left;
+    text-align: left;
+}
+.toplink a:hover{
+    color: black;
+    background-color: azure;
+    text-decoration: none;
+}
+.banner{
+    background-color: rgb(167, 89, 211);
+    padding: 10px;
+    text-align: center;
+}
+.row{
+    content: "";
+    display: block;
+    clear: both;
+}
+.content{
+    float: left;
+    width: 70%;
+}
+.side_bar{
+
+}
+
+table{
+    border: 1px black;
+    border-collapse: collapse;
+    width: 70%;
+}
+td{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    text-align: left;
+}
+th{
+    background-color: rgb(226, 43, 150);
+    color:blueviolet;
+    padding: 5px;
+    text-align: left;
+}
+tr :nth-child(odd){
+    background-color: rgb(0, 64, 255);
+}
+tr:hover{
+    background-color: rgb(248, 196, 255);
+}
