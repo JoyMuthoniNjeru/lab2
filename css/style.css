@@ -1,29 +1,19 @@
 body{
-    background-color: rgb(218, 218, 220);
-    margin: 0%;
+    background: linear-gradient(rgb(136, 211, 240), rgb(248, 142, 200));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
 }
-.toplink{
-    background-color: rgb(231, 206, 226);
-    overflow: hidden;
+h1{
+    color: rgba(255, 143, 105, 0.904);
 }
-.toplink a{
-    color: rgb(60, 130, 215);
-    text-decoration: none;
-    padding: 14px 16px;
-    display: block;
-    float: left;
-    text-align: left;
-}
-.toplink a:hover{
+p{
     color: black;
-    background-color: azure;
-    text-decoration: none;
+    font-style: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
-.banner{
-    background-color: rgb(167, 89, 211);
-    padding: 10px;
-    text-align: center;
-}
+
 .row{
     content: "";
     display: block;
