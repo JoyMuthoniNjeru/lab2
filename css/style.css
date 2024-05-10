@@ -11,10 +11,34 @@ p{
     color: black;
     font-style: normal;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
 }
-
-.row{
+.toplink{
+    color: black;
+    overflow: hidden;
+}
+.toplink a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    float: left;
+    text-align: left;
+}
+.toplink a:hover{
+    color: black;
+    background-color: antiquewhite;
+    text-decoration: none;
+}
+.toplink-right{
+    float: right;
+}
+.banner{
+    background-color: rgb(121, 96, 96);
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+.row:after{
     content: "";
     display: block;
     clear: both;
@@ -22,11 +46,27 @@ p{
 .content{
     float: left;
     width: 70%;
+    padding: 15px;
 }
 .side_bar{
-
+    float: left;
+    width: 20px;
+    padding: 20px;
+    text-align: center;
 }
-
+.row{
+    content: "";
+    display: block;
+    clear: both;
+}
+h2{
+    text-align: left;
+    color: pink;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+}
 table{
     border: 1px black;
     border-collapse: collapse;
