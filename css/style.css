@@ -38,6 +38,12 @@ p{
     text-align: center;
     color: whitesmoke;
 }
+.footer{
+    background-color: pink;
+    padding: 2px;
+    text-align: center;
+    color: whitesmoke; 
+}
 .row:after{
     content: "";
     display: block;
