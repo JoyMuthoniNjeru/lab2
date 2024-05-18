@@ -20,12 +20,14 @@ p{
     color: antiquewhite;
     text-decoration: none;
     padding: 14px 16px;
+    margin: 0px;
     display: block;
     float: left;
     text-align: left;
 }
 .toplink a:hover{
     color: black;
+    margin: 0px;
     background-color: antiquewhite;
     text-decoration: none;
 }
