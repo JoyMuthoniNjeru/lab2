@@ -17,7 +17,7 @@ p{
     overflow: hidden;
 }
 .toplink a{
-    color: antiquewhite;
+    color: rgb(13, 13, 13);
     text-decoration: none;
     padding: 14px 16px;
     margin: 0px;
@@ -35,10 +35,17 @@ p{
     float: right;
 }
 .banner{
+    background-color: rgb(213, 244, 244);
+    padding: 2px;
+    text-align: center;
+    color: whitesmoke;
+}
+.heading{
     background-color: pink;
     padding: 2px;
     text-align: center;
     color: whitesmoke;
+    margin: 0px;
 }
 .footer{
     background-color: pink;

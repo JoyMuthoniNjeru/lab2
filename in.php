@@ -23,6 +23,8 @@
 
    print "5467"; //this is a string
 
+   print "<br>"; //using HTML's <br> to break a line
+
    print date('l');//displaying the current day of the week
 
    print "<br>"; //using HTML's <br> to break a line
