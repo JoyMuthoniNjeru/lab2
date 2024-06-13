@@ -1,0 +1,1 @@
+<div class="footer">Copyright Shera &copy;All rights deserved</div> 

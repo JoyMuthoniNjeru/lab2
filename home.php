@@ -8,21 +8,9 @@
     
 </head>
 <body>
+<?php include_once ("templates/nav.php"); ?>
     <div class="banner"> 
-    <div class="toplink">
-        <a href="home.html">HOME</a> 
-        <a href="about.html">ABOUT</a> 
-        <a href="guide.html">GUIDE</a> 
-        <a href="gallery.html">GALLERY</a> 
-        <a href="facts.html">FACTS</a> 
-        <a href="community.html">COMMUNITY</a> 
-        <a href="feedback.html">FEEDBACK</a>
-
-    <div class = "toplink-right">
-        <a href="signup.html">Sign Up</a> 
-        <a href="signin.html">Sign In</a>
-    </div>
-    </div>
+    
 </div>
 
 <div class="heading">
@@ -36,6 +24,6 @@
 
 <img src="images\7a827f89-d7df-4196-9db4-ef6373fcf46f.jpeg" alt="" width="30%"><br><br>
 
- <div class="footer">Copyright Shera &copy;All rights deserved</div>   
+<?php include_once("templates/footer.php"); ?>  
 </body>
 </html>

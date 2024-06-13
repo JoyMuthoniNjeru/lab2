@@ -8,21 +8,9 @@
     
 </head>
 <body>
+    <?php include_once ("templates/nav.php"); ?>
     <div class="banner"> 
-    <div class="toplink">
-    <a href="home.html">HOME</a> 
-    <a href="about.html">ABOUT</a> 
-    <a href="guide.html">GUIDE</a> 
-    <a href="gallery.html">GALLERY</a> 
-    <a href="facts.html">FACTS</a> 
-    <a href="community.html">COMMUNITY</a> 
-    <a href="feedback.html">FEEDBACK</a> 
-    <div class = "toplink-right">
-        <a href="signup.html">Sign Up</a> 
-        <a href="signin.html">Sign In</a>
     </div>
-    </div>
-</div>
     <h2 style="text-align: left;color: rgba(255, 105, 233, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;">EPISODES</h2>
 
     <table border="1px" style="border: 1px solid black;width: 50%;border-collapse: collapse;">
@@ -75,6 +63,6 @@
         (a result of Hordak's planetary-scale warfare). There is a strong focus on the struggle to break free of sociopolitical indoctrination,<br>
         explored mainly through the stories of Adora, Hordak, and Light Hope. </p>
 
-        <div class="footer">Copyright Shera &copy;All rights deserved</div>   
+        <?php include_once("templates/footer.php"); ?>  
 </body>
 </html>

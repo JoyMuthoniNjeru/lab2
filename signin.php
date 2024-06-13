@@ -7,20 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="banner"> 
-        <div class="toplink">
-        <a href="home.html">HOME</a> 
-        <a href="about.html">ABOUT</a> 
-        <a href="guide.html">GUIDE</a> 
-        <a href="gallery.html">GALLERY</a> 
-        <a href="facts.html">FACTS</a>
-        <a href="community.html">COMMUNITY</a> 
-        <a href="feedback.html">FEEDBACK</a>
-        <div class = "toplink-right">
-            <a href="signup.html">Sign Up</a> 
-            <a href="signin.html">Sign In</a>
-        </div>
-        </div> 
+    <?php include_once ("templates/nav.php"); ?>
+    <div class="banner"> 
 </div>  
 <h2 style="text-align: left;color: rgba(255, 105, 185, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Sign In </h2> 
 <p>Welcome back. Proceed to sign in below.</p> 

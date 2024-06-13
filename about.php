@@ -7,22 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="banner">   
-  <div class="toplink">
-    <a href="home.html">HOME</a> 
-    <a href="about.html">ABOUT</a> 
-    <a href="guide.html">GUIDE</a> 
-    <a href="gallery.html">GALLERY</a> 
-    <a href="facts.html">FACTS</a> 
-    <a href="community.html">COMMUNITY</a> 
-    <a href="feedback.html">FEEDBACK</a>
-   
-  <div class = "toplink-right">
-        <a href="signup.html">Sign Up</a> 
-        <a href="signin.html">Sign In</a>
-    </div>
-    </div>  
-</div> 
+  <?php include_once ("templates/nav.php"); ?>
+  <div class="banner"> 
+  </div> 
     <h1 style="text-align: left;color: rgba(255, 105, 233, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;">ABOUT SHE-RA</h1>
     
     <h3 style="text-align: left;color: rgb(223, 105, 255);text-transform: uppercase;font-style: italic;font-weight: bolder;">Backstory of She-Ra</h3>
@@ -41,6 +28,6 @@
     <img src="images\Entrapta polaroid poster.jpeg"alt="" width="20%">
     <img src="images\Double Trouble polaroid poster.jpeg"alt="" width="20%">
 
-    <div class="footer">Copyright Shera &copy;All rights deserved</div>   
+    <?php include_once("templates/footer.php"); ?>  
 </body>
 </html>
