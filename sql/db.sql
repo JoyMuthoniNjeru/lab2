@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 20, 2024 at 11:36 AM
+-- Generation Time: Jun 22, 2024 at 05:01 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -20,7 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `voge`
 --
-DROP DATABASE IF EXISTS `voge`;
 CREATE DATABASE IF NOT EXISTS `voge` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `voge`;
 
@@ -49,6 +48,24 @@ INSERT INTO `genders` (`genderId`, `gender`, `datecreated`, `dateupdated`) VALUE
 (2, 'Male', '2024-06-20 12:34:12', '2024-06-20 12:34:12'),
 (3, 'Non-Binary', '2024-06-20 12:34:12', '2024-06-20 12:34:12'),
 (4, 'Rather not say', '2024-06-20 12:34:12', '2024-06-20 12:34:12');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `messages`
+--
+
+DROP TABLE IF EXISTS `messages`;
+CREATE TABLE IF NOT EXISTS `messages` (
+  `messageId` bigint(10) NOT NULL AUTO_INCREMENT,
+  `sender_name` varchar(50) DEFAULT NULL,
+  `sender_email` varchar(50) DEFAULT NULL,
+  `subject_line` text DEFAULT NULL,
+  `text_message` text DEFAULT NULL,
+  `datecreated` datetime DEFAULT current_timestamp(),
+  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`messageId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 

@@ -1,4 +1,8 @@
 <?php
+
+require_once ("includes/db_connect.php"); 
+include_once ("templates/nav.php"); 
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -11,5 +15,5 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+//echo "Connected successfully";
 ?>
