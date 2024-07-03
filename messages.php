@@ -32,7 +32,7 @@
     <div class="banner"> 
     </div>
     <h2 style="text-align: left;color: rgba(255, 105, 228, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> She-Ra Fan Community</h2>
-    <p>This is a free space for fans to connect, share their stories, art and cosplay or discuss their favourite episodes and characters.</p>
+    <p>This is a platform to share your messages</p>
 
     <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="community_form">
         <label for="fname">First name:</label><br>
