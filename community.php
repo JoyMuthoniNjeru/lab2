@@ -23,7 +23,8 @@ if(isset($_POST["submit"])){
     VALUES ('$fn', '$mail', '$dob', '$gender', '$view')";
 
     if ($conn->query($insert_view) === TRUE) {
-    echo "New record created successfully";
+        header("Location: community.php");
+        exit();
     } else {
     echo "Error: " . $insert_view . "<br>" . $conn->error;
     }
