@@ -23,7 +23,7 @@ if(isset($_POST["submit"])){
     VALUES ('$fn', '$mail', '$dob', '$gender', '$view')";
 
     if ($conn->query($insert_view) === TRUE) {
-        header("Location: community.php");
+        header("Location: view.php");
         exit();
     } else {
     echo "Error: " . $insert_view . "<br>" . $conn->error;
