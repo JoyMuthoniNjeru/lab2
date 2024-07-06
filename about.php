@@ -13,8 +13,9 @@
   <?php include_once ("templates/nav.php"); ?>
   <div class="banner"> 
   </div> 
-    <h1 style="text-align: left;color: rgba(255, 105, 233, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;">ABOUT SHE-RA</h1>
-    
+  <div class="heading">
+    <h1 style="text-align: centre;rgba(255, 143, 105, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;">ABOUT SHE-RA</h1>
+  </div> 
     <h3 style="text-align: left;color: rgb(223, 105, 255);text-transform: uppercase;font-style: italic;font-weight: bolder;">Backstory of She-Ra</h3>
     <p>She-Ra and the Princesses of Power is set on the planet Etheria and follows the stories of Adora and Catra, orphans who were<br> raised to be soldiers in the Horde. They are part of an evil army led by Hordak, a tyrannical despot who dreams of conquering<br>
     the planet. One day, after getting lost in the woods, Adora finds a magic sword that transforms her into the legendary Princess<br> of Power, She-Ra. After learning that the Horde is actually evil and has been inflicting suffering on Etheria and its inhabitants,<br> 

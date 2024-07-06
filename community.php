@@ -31,7 +31,9 @@
 
     <div class="banner"> 
     </div>
-    <h2 style="text-align: left;color: rgba(255, 105, 228, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> She-Ra Fan Community</h2>
+<div class="heading">
+    <h1 style="text-align: centre;color: rgba(255, 143, 105, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> She-Ra Fan Community</h2>
+</div>
     <p>This is a free space for fans to connect, share their stories, art and cosplay or discuss their favourite episodes and characters.</p>
 
     <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="community_form">

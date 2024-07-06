@@ -12,15 +12,20 @@
 
     <?php include_once ("templates/nav.php"); ?>
     <div class="banner"> 
-</div>  
-<h2 style="text-align: left;color: rgba(255, 105, 185, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Sign In </h2> 
-<p>Welcome back. Proceed to sign in below.</p> 
+</div> 
+<div class="heading"> 
+    <h1 style="text-align: centre;color: rgba(255, 105, 185, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Sign In </h2> 
+</div>
 
-<form>
+<p style="text-align:center">Welcome back. Proceed to sign in below</p>
+<form style="text-align: center;">
     <label for="username">Username:</label><br>
     <input type="text" id="username" name="username"><br><br>
     <label for="pwd">Password: </label><br>
     <input type="password" id="pwd" name="pwd">
-  </form>
+</form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<?php include_once("templates/footer.php"); ?>
+
 </body>
 </html>

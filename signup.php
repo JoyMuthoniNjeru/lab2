@@ -14,7 +14,10 @@
     <?php include_once ("templates/nav.php"); ?>
     <div class="banner"> 
 </div>
-<h2 style="text-align: left;color: rgba(255, 105, 185, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Sign Up </h2>
+<div class="heading">
+    <h1 style="text-align: centre;color: rgba(255, 105, 185, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Sign Up </h2>
+</div>
+
 <p>Welcome to the Shera fanpage, we are so happy to have you. You can sign up to be part of this lovely community below.</p>
 
 <form>
@@ -40,6 +43,8 @@
         <input type="radio" id="html" name="Sign up" value="Sign up">
         <label for ="Sign up">No</label>
         <input type="radio" id="html" name="Sign up" value="Sign up">
-    </form>   
+    </form><br><br><br><br><br><br><br><br><br><br>
+    
+    <?php include_once("templates/footer.php"); ?>
 </body>
 </html>

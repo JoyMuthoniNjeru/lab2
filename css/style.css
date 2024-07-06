@@ -28,7 +28,7 @@ p{
 .toplink a:hover{
     color: black;
     margin: 0px;
-    background-color: antiquewhite;
+    background-color: pink;
     text-decoration: none;
 }
 .toplink-right{
@@ -36,7 +36,7 @@ p{
 }
 .banner{
     background-color: rgb(213, 244, 244);
-    padding: 2px;
+    padding: px;
     text-align: center;
     color: whitesmoke;
 }
@@ -64,10 +64,10 @@ p{
     padding: 15px;
 }
 .side_bar{
-    float: left;
+    float: right;
     width: 20px;
-    padding: 20px;
-    text-align: center;
+    padding: 100px;
+    text-align: right;
 }
 .row{
     content: "";
@@ -104,3 +104,13 @@ tr{
 tr:hover{
     background-color: rgb(248, 196, 255);
 }
+
+label{
+    z-index: 6;
+    padding: 0px;
+    padding-left: 40px;
+    margin-left: -30px;
+    border-radius: 5px;
+    color:black
+}
+    

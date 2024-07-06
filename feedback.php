@@ -13,7 +13,9 @@
     <?php include_once ("templates/nav.php"); ?>
     <div class="banner"> 
 </div>
-    <h2 style="text-align: left;color: rgba(255, 105, 185, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Feedback </h2>
+<div class="heading">
+    <h1 style="text-align: centre;color: rgba(255, 143, 105, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Feedback </h2>
+</div>
     <p>If you have any feedback, complaints, comments or criticisms, feel free to reach us through the e-mail or mobile number below</p>
 
     <label for="telno">Call/Message us at:</label><br>

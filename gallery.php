@@ -12,8 +12,10 @@
 
     <?php include_once ("templates/nav.php"); ?>
     <div class="banner"> 
-    </div>   
-    <h2 style="text-align: left;color: rgba(255, 188, 105, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;">She-Ra Gallery</h2>
+    </div> 
+<div class="heading">  
+    <h1 style="text-align: centre;color: rgba(255, 143, 105, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;">She-Ra Gallery</h2>
+</div>
     <p>Below are some amazing pictures of She-Ra Original and Fan Art</p>
 
     <img src="images\Catra and Adora (Catradora) - She-Ra and the….jpeg"alt="" width="20%">
