@@ -22,14 +22,14 @@
 
 <form>
     <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br><br>
+    <input type="text" id="fname" name="fname" required><br><br>
     <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
+    <input type="text" id="lname" name="lname" required>
   </form><br>
 
 <form>
     <label for="email">E-mail:</label><br>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" required>
 </form><br>
 
 <form>

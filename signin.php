@@ -20,9 +20,9 @@
 <p style="text-align:center">Welcome back. Proceed to sign in below</p>
 <form style="text-align: center;">
     <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br><br>
+    <input type="text" id="username" name="username" required><br><br>
     <label for="pwd">Password: </label><br>
-    <input type="password" id="pwd" name="pwd">
+    <input type="password" id="pwd" name="pwd" required>
 </form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <?php include_once("templates/footer.php"); ?>

@@ -8,74 +8,64 @@
 </head>
 <body>
 
-<?php require_once ("includes/db_connect.php"); ?>
-<?php include_once ("templates/nav.php"); ?>
+<?php 
+require_once ("includes/db_connect.php"); 
+include_once ("templates/nav.php"); 
 
-<?php
+if(isset($_POST["submit"])){
+    $fn = $_POST["fullname"];
+    $mail = $_POST["e-mail"];
+    $dob = $_POST["date_of_birth"]; 
+    $gender = $_POST["gender"]; 
+    $view = $_POST["community_views"];
 
-    if(isset($_POST["submit"])){
-    $fn = $_POST["fname"];
-    $ln = $_POST["lname"];
-    $mail = $_POST["email"]; 
-    $view = $_POST["review"];
+    $insert_view = "INSERT INTO community (sender_name,sender_email,subject_bday,subject_gender,text_message)
+    VALUES ('$fn', '$mail', '$dob', '$gender', '$view')";
 
-    $insert_message = "INSERT INTO community (firstname,lastname,email,views)
-    VALUES ('$fn', '$ln', '$mail', '$view')";
-
-    if ($conn->query($insert_message) === TRUE) {
+    if ($conn->query($insert_view) === TRUE) {
     echo "New record created successfully";
     } else {
-    echo "Error: " . $insert_message . "<br>" . $conn->error;
+    echo "Error: " . $insert_view . "<br>" . $conn->error;
     }
 }
 ?>
-<div class="banner"> 
-    </div>
+
+<div class="banner"></div>
 <div class="heading">
-    <h1 style="text-align: centre;color: rgba(255, 143, 105, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> She-Ra Fan Community</h2>
+    <h1 style="text-align: centre;color: rgba(255, 143, 105, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> She-Ra Fan Community</h1>
 </div>
     <p>This is a free space for fans to connect, share their stories, art and cosplay or discuss their favourite episodes and characters.</p>
 
     <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="community_form">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"required><br><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"required>
-      </form><br>
+        <label for="fn">Full name:</label><br>
+        <input type="text" id="fn" name="fullname" required><br><br>
+      
 
-    <form>
         <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email"required>
-    </form><br>
+        <input type="email" id="email" name="e-mail"required><br><br>
+    
 
-    <form>
         <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob"required>
-    </form><br>
+        <input type="date" id="dob" name="date_of_birth"required><br><br>
+    
 
-    <p>Gender: </p>
-<form>
-  <input type="radio" id="gender" name="Male" value="Male">
-  <label for="Male">Male</label><br>
-  <input type="radio" id="gender" name="Female" value="Female">
-  <label for="Female">Female</label><br>
-  <input type="radio" id="gender" name="Non-Binary" value="Non-Binary">
-  <label for="Non-Binary">Non-Binary</label><br>
-  <input type="radio" id="gender" name="Rather not say" value="rather not say">
-  <label for="rather not say">Rather not say</label>
-</form><br>
+    <p>Gender:</p>
 
-<label for="review">Share your views:</label><br>
-<textarea id="review" name="review" rows="4" cols="50">
-</textarea><br><br>
+  <input type="radio" id="male" name="gender" value="Male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="nb" name="gender" value="Non-binary">
+  <label for="nb">Non-Binary</label><br>
+  <input type="radio" id="rns" name="gender" value="Rather not say">
+  <label for="rns">Rather not say</label><br><br>
 
-<form>
-    <label for="image">Share images:</label><br>
-    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
-</form><br>
+  <label for="review">Share your views:</label><br>
+  <textarea id="review" name="community_views" rows="4" cols="50" required>
+  </textarea><br><br>
 
-<form>
-    <input type="submit" value="Submit">
+ 
+  <input type="submit" name="submit" value="Submit">
 </form>
 
 <?php include_once("templates/footer.php"); ?> 
