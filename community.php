@@ -15,11 +15,12 @@
 
     if(isset($_POST["submit"])){
     $fn = $_POST["fname"];
+    $ln = $_POST["lname"];
     $mail = $_POST["email"]; 
     $view = $_POST["review"];
 
-    $insert_message = "INSERT INTO messages (sender_name,sender_email,text_message)
-    VALUES ('$fn', '$mail', '$view')";
+    $insert_message = "INSERT INTO community (firstname,lastname,email,views)
+    VALUES ('$fn', '$ln', '$mail', '$view')";
 
     if ($conn->query($insert_message) === TRUE) {
     echo "New record created successfully";
@@ -28,8 +29,7 @@
     }
 }
 ?>
-
-    <div class="banner"> 
+<div class="banner"> 
     </div>
 <div class="heading">
     <h1 style="text-align: centre;color: rgba(255, 143, 105, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> She-Ra Fan Community</h2>
