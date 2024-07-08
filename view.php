@@ -11,6 +11,20 @@
 <?php 
 require_once ("includes/db_connect.php"); 
 include_once ("templates/nav.php"); 
+
+if (isset($_GET["DelId"])){
+    $Del_Id = intval($_GET["DelId"]);
+
+    // sql to delete a record
+    $del_mes = "DELETE FROM community WHERE communityId='$Del_Id' LIMIT 1";
+
+    if ($conn->query($del_mes) === TRUE) {
+        header("Location: view.php");
+        exit();
+    } else {
+        echo "Error deleting record: " . $conn->error;
+    }
+}
 ?>
 
 <div class="banner"></div>
@@ -44,23 +58,24 @@ if ($select_msg_res === false) {
         while($select_msg_row = $select_msg_res->fetch_assoc()) {
             $en++;
 ?>
-</tbody>
     <tr>
         <td><?php print $en;?>.</td>
         <td><?php print $select_msg_row["sender_name"]; ?></td>
         <td><?php print $select_msg_row["sender_email"]; ?></td>
         <td><?php print "<strong>" . $select_msg_row["text_message"] . '</strong>. ' .  substr($select_msg_row["text_message"], 0,2) . '...'; ?></td>
         <td><?php print date("d-M-Y H:i", strtotime($select_msg_row["datecreated"])); ?></td>
-        <td>[ <a href = "edit_msg.php?communityId=<?php print $select_msg_row['communityId'];?>">Edit</a> ] [ Del ]</td>
+        <td>[ <a href="edit_msg.php?communityId=<?php print $select_msg_row['communityId'];?>">Edit</a> ] [
+        <a href="?DelId=<?php print $select_msg_row['communityId'];?>">Del</a> ]</td>
     </tr>
 <?php
         }
     } else {
-        echo "<tr><td colspan='5'>0 results</td></tr>";
+        echo "<tr><td colspan='6'>0 results</td></tr>";
     }
 }
 ?>
 
+</tbody>
 </table><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <?php include_once("templates/footer.php"); ?> 
