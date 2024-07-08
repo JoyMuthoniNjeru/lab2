@@ -25,6 +25,7 @@ include_once ("templates/nav.php");
        <th>Email</th>
        <th>Message</th>
        <th>Time</th>
+       <th>Action</th>
     </tr>
     </thead>
 <tbody>
@@ -50,7 +51,7 @@ if ($select_msg_res === false) {
         <td><?php print $select_msg_row["sender_email"]; ?></td>
         <td><?php print "<strong>" . $select_msg_row["text_message"] . '</strong>. ' .  substr($select_msg_row["text_message"], 0,2) . '...'; ?></td>
         <td><?php print date("d-M-Y H:i", strtotime($select_msg_row["datecreated"])); ?></td>
-        <td>[ <a href = "edit_msgs.php?communityId<?php print $select_msg_row["communityId"];?>">Edit</a> ] [ Del ]</td>
+        <td>[ <a href = "edit_msg.php?communityId=<?php print $select_msg_row['communityId'];?>">Edit</a> ] [ Del ]</td>
     </tr>
 <?php
         }
