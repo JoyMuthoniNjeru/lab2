@@ -65,7 +65,7 @@ if ($select_msg_res === false) {
         <td><?php print "<strong>" . $select_msg_row["text_message"] . '</strong>. ' .  substr($select_msg_row["text_message"], 0,2) . '...'; ?></td>
         <td><?php print date("d-M-Y H:i", strtotime($select_msg_row["datecreated"])); ?></td>
         <td>[ <a href="edit_msg.php?communityId=<?php print $select_msg_row['communityId'];?>">Edit</a> ] [
-        <a href="?DelId=<?php print $select_msg_row['communityId'];?>">Del</a> ]</td>
+        <a href="?DelId=<?php print $select_msg_row['communityId'];?>" onclick="return confirm('This action will delete this message permanently. \n Are you sure you want to procede?');">Del</a> ]</td>
     </tr>
 <?php
         }
