@@ -22,8 +22,10 @@
     <label for="username">Username:</label><br>
     <input type="text" id="username" name="username" required><br><br>
     <label for="pwd">Password: </label><br>
-    <input type="password" id="pwd" name="pwd" required>
-</form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <input type="password" id="pwd" name="pwd" required><br><br>
+
+<input type="submit" name="submit" value="Submit"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</form>
 
 <?php include_once("templates/footer.php"); ?>
 

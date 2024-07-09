@@ -43,7 +43,9 @@
         <input type="radio" id="html" name="Sign up" value="Sign up">
         <label for ="Sign up">No</label>
         <input type="radio" id="html" name="Sign up" value="Sign up">
-    </form><br><br><br><br><br><br><br><br><br><br>
+    </form><br>
+    
+    <input type="submit" name="submit" value="Submit"><br><br><br><br><br><br><br><br><br>
     
     <?php include_once("templates/footer.php"); ?>
 </body>
