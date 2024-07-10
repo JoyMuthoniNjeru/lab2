@@ -21,7 +21,7 @@
     the planet. One day, after getting lost in the woods, Adora finds a magic sword that transforms her into the legendary Princess<br> of Power, She-Ra. After learning that the Horde is actually evil and has been inflicting suffering on Etheria and its inhabitants,<br> 
     Adora decides to join the Rebellion in the fight against the Horde. She helps rebuild the Princess Alliance, a league of kingdoms<br> ruled by other magical princesses. Adora's newfound allegiance to the Rebellion pits her against Catra, her former best friend,<br> 
     whose feelings of betrayal and abandonment twist her personal ambitions and lead her to become Adora's archenemy.</p>
-
+ 
     <h3 style="text-align: left;color: rgb(115, 105, 255);text-transform: uppercase;font-style: italic;font-weight: bolder;">Character Profiles</h3>
 
     <img src="images\Adora polaroid poster.jpeg"alt="" width="20%">

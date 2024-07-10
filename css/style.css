@@ -36,7 +36,7 @@ p{
 }
 .banner{
     background-color: rgb(213, 244, 244);
-    padding: px;
+    padding: 0px;
     text-align: center;
     color: whitesmoke;
 }
@@ -46,6 +46,11 @@ p{
     text-align: center;
     color: whitesmoke;
     margin: 0px;
+}
+.right-image {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .footer{
     background-color: pink;
