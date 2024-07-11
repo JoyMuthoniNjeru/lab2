@@ -6,28 +6,44 @@
     <title>SignIn</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="sign-in-page">
 
 <?php require_once ("includes/db_connect.php"); ?>
 
-    <?php include_once ("templates/nav.php"); ?>
-    <div class="banner"> 
-</div> 
+<?php include_once ("templates/nav.php"); ?>
+<div class="banner"></div> 
 <div class="heading"> 
-    <h1 style="text-align: centre;color: rgba(255, 105, 185, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Sign In </h2> 
+    <h1 style="text-align: center;color: rgba(255, 105, 185, 0.904);text-transform: uppercase;font-style: oblique;font-weight: bolder;"> Sign In </h1> 
 </div>
 
 <p style="text-align:center">Welcome back. Proceed to sign in below</p>
-<form style="text-align: center;">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" required><br><br>
-    <label for="pwd">Password: </label><br>
-    <input type="password" id="pwd" name="pwd" required><br><br>
+<div class="form-wrapper">
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+            <img src="images/avatar.png" alt="Avatar" class="avatar">
+        </div>
 
-<input type="submit" name="submit" value="Submit"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</form>
+        <div class="container">
+            <label for="uname"><b>Username</b></label><br>
+            <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label><br><br><br>
+        </div>
+
+        <div class="container">
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
 
 <?php include_once("templates/footer.php"); ?>
 
 </body>
 </html>
+

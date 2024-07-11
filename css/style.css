@@ -118,4 +118,101 @@ label{
     border-radius: 5px;
     color:black
 }
-    
+
+body.sign-in-page .form-wrapper,
+body.sign-up-page .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px); /* Adjust this based on your banner and other elements */
+    margin: 0;
+    padding: 20px;
+}
+
+body.sign-in-page form,
+body.sign-up-page form {
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body.sign-in-page input[type=text], 
+body.sign-in-page input[type=password],
+body.sign-up-page input[type=text], 
+body.sign-up-page input[type=email], 
+body.sign-up-page input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+body.sign-in-page button, 
+body.sign-up-page input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+body.sign-in-page button:hover, 
+body.sign-up-page input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+body.sign-in-page .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+body.sign-in-page img.avatar {
+    width: 20%;
+    border-radius: 20%;
+}
+
+body.sign-in-page .container, 
+body.sign-up-page .container {
+    padding: 16px;
+}
+
+body.sign-in-page span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+body.sign-in-page label, 
+body.sign-up-page label {
+    display: block;
+    margin: 8px 0;
+}
+
+body.sign-in-page p, 
+body.sign-up-page p {
+    text-align: center;
+}
+
+body.sign-up-page .radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+body.sign-up-page input[type=radio] {
+    margin: 0 5px 0 0;
+}
+
+@media screen and (max-width: 300px) {
+    body.sign-in-page span.psw,
+    body.sign-up-page input[type=radio] {
+        display: block;
+        width: 100%;
+    }
+}

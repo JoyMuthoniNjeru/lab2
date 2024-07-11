@@ -62,7 +62,7 @@ if(isset($_POST["submit"])){
   <label for="rns">Rather not say</label><br><br>
 
   <label for="review">Share your views:</label><br>
-  <textarea id="review" name="community_views" rows="4" cols="50" required>
+  <textarea id="review" name="community_views" rows="4" cols="40" required>
   </textarea><br><br>
 
  
