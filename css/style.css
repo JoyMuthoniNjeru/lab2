@@ -124,7 +124,7 @@ body.sign-up-page .form-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 200px); /* Adjust this based on your banner and other elements */
+    min-height: calc(100vh - 200px); 
     margin: 0;
     padding: 20px;
 }
